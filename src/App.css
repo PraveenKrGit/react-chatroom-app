@@ -1,0 +1,277 @@
+.App {
+  margin: 0 auto;
+  width: 50%;
+}
+
+body {
+  background-color: #282c34;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.App header {
+  background-color: #ffffff;
+  height: 10vh;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  box-shadow: 0px 5px 6px -1px rgba(235,235,235,1);
+}
+
+
+.sign-out {
+  /* background-color: #000000; */
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: .4rem 1rem;
+  margin: 0 1rem;
+}
+
+.sign-out:hover {
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+
+/* @media only screen and (max-width: 850px) {
+  .App{
+    width: 70%;
+  }
+  .App header{
+    width: 35%;
+  }
+} */
+
+/* @media only screen and (max-width: 600px) {
+  .App{
+    width: 100%;
+  }
+
+  .App header{
+    width: 50%;
+  }
+} */
+
+header h1 {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #F7F7F7;
+}
+
+.front-page {
+  height: 100vh;
+  /* width: 100vh; */
+  /* background-color: #ffffff;background-image: linear-gradient(10deg, #C2E9FE 8%, #E9DBF5 73%); */
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.logo-sec{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: -50px;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: lato;
+  color:#0e1c5f;
+}
+
+.title span{
+  font-size: 1.1rem;
+  font-family: poppins;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height: 270px;
+  width: auto;
+}
+
+.wel{
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.google-sign {
+  border: 1px solid gray;
+  background-color: #4285f4;
+  width: 310px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  height: 3.2rem;
+}
+
+.google-sign:hover{
+  background-color:#2464cc ;
+}
+
+.google-sign img {
+  background-color: white;
+  margin-right: 1rem;
+}
+
+.sign-in-txt {
+  font-size: 1rem;
+  color: white;
+}
+
+main {
+  height: 85vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+}
+
+
+.para {
+  max-width: 500px;
+  margin-bottom: 7px;
+  line-height: 24px;
+  padding: 7px 15px;
+  border-radius: 25px;
+  /* margin-top: 4px; */
+  /* position: relative; */
+  color: white;
+  text-align: center;
+  box-shadow: 0px 2px 6px 0px rgba(204,204,204,1);
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 0 1rem;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  text-align: left;
+  margin-left: 40%;
+  font-size: 0.8rem;
+}
+.received p {
+  background: #ffffff;
+  color: black;
+  margin-right: 40%;
+  text-align: left;
+  font-size: 0.8rem;
+  box-shadow: 0px 1px 4px 0px rgba(222,222,222,1);
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+form {
+  position: fixed;
+  bottom: 10px;
+  background-color: #F7F7F7;
+  display: flex;
+  width: 50%;
+  
+}
+input {
+  font-size: 0.9rem;
+  background: rgb(255, 255, 255);
+  /* color: rgb(0, 0, 0); */
+  padding: 0 10px;
+  border: 1px solid rgb(196, 196, 196);
+  height: 2.3rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin-right: .5rem;
+  margin-left: .4rem;
+  outline: none;
+}
+
+input:focus{
+  border: 1px solid rgba(0, 0, 0, 0.551);
+}
+
+.send {
+  border-radius: 10%;
+  background-color: #000000;
+}
+
+.btn {
+  border: none;
+  color: #0b93f6;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: .4rem;
+  background-color:transparent;
+}
+
+.btn i{
+  cursor: pointer;
+}
+
+.btn:hover {
+  /* background-color: RoyalBlue; */
+  color: #0465aa;
+}
