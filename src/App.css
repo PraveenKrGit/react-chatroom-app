@@ -25,6 +25,8 @@ body {
 }
 
 
+
+
 .sign-out {
   /* background-color: #000000; */
   border: 2px solid black;
@@ -233,7 +235,6 @@ form {
   background-color: #F7F7F7;
   display: flex;
   width: 50%;
-  
 }
 input {
   font-size: 0.9rem;
@@ -274,4 +275,35 @@ input:focus{
 .btn:hover {
   /* background-color: RoyalBlue; */
   color: #0465aa;
+}
+
+
+@media only screen and (max-width:750px){
+  .App{
+    width:75%
+  }
+
+  .App header{
+    width: 75%;
+  }
+
+  form{
+    width: 75%;
+  }
+}
+
+
+
+@media only screen and (max-width:600px){
+  .App{
+    width:100%
+  }
+
+  .App header{
+    width: 100%;
+  }
+
+  form{
+    width: 100%;
+  }
 }

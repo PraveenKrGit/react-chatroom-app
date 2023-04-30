@@ -38,7 +38,6 @@ function App() {
       </header>
 
       <section>
-        {/* //if user is defined show chatroom otherwise if user is null show sign in */}
         {user ? <ChatRoom /> : <SignIn />}
       </section>
     </div>
