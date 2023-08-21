@@ -25,6 +25,7 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
+//check if the user is signed in or not
 function App() {
   const [user] = useAuthState(auth);
 
@@ -44,7 +45,7 @@ function App() {
   );
 }
 
-//sign in page..
+//sign in page using google auth provider
 function SignIn() {
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
@@ -84,12 +85,12 @@ function SignOut() {
   );
 }
 
-//input text
+//submit messages and display messages
 function ChatRoom() {
   const dummy = useRef();
-  //make reference to the database
+  //make reference to the database collection
   const messagesRef = firestore.collection("messages");
-  //make query to database which is ordered by createdAt
+  //make query to retrieve most recent 25 messages
   const query = messagesRef.orderBy("createdAt").limit(25);
 
   //listen to any update in realtime
@@ -136,7 +137,7 @@ function ChatRoom() {
   );
 }
 
-//message
+//Display individual chat maessages
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
 
